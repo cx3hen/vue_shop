@@ -54,6 +54,7 @@ export default {
     resetLoginForm () {
       this.$refs.loginFormRef.resetFields()
     },
+    // 通过引用对象this.$refs获取组件实例
     login () {
       this.$refs.loginFormRef.validate(async (valid) => {
         // eslint-disable-next-line no-useless-return
@@ -62,7 +63,7 @@ export default {
         // console.log(res)
         if (res.meta.status !== 200) return this.$message.error('登陆失败')
         this.$message.success('登陆成功')
-        console.log(res)
+        // console.log(res)
         window.sessionStorage.setItem('token', res.data.token)
         this.$router.push('/home')
       })
