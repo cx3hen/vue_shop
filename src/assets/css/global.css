@@ -21,3 +21,19 @@ html, body, #app {
 .el-pagination {
     margin-top: 15px;
 }
+
+.el-Steps {
+    margin: 15px 0
+}
+
+.el-step__title {
+    font-size: 13px;
+}
+
+.el-steps {
+    justify-content: center;
+}
+
+.ql-editor {
+    min-height: 300px;
+}
