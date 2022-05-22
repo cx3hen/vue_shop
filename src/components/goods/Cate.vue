@@ -214,7 +214,7 @@ export default {
     },
     // 选中向发生变化触发
     parentCateChanged () {
-      console.log(this.selectedKeys)
+      // console.log(this.selectedKeys)
       // 如果 selectedKeys 数组中的length大于0证明选中父级分类
       // 反之,就说明没有选中任何父级分类
       if (this.selectedKeys.length > 0) {
